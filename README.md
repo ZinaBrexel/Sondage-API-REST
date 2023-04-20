@@ -7,7 +7,11 @@
 
 ## Description du projet 🌱
 
+<<<<<<< HEAD
 Ce projet a été créé dans le cadre de ma formation de développeur web. Il s'inscrit dans le contexte d'une entreprise fictive d'assurance appelée OXO, pour laquelle j'ai travaillé en tant que développeur. Le directeur du Système d'Information a souhaité lancer une nouvelle plateforme permettant aux salariés de voter sur des sujets liés à l'entreprise. 
+=======
+Ce projet a été créé dans le cadre de ma formation de développeur web. Il s'inscrit dans le contexte d'une entreprise fictive d'assurance appelée OXO, pour laquelle j'ai travaillé en tant que développeur. Le directeur du Système d'Information a souhaité lancer une nouvelle plateforme permettant aux salariés de voter sur des sujets liés à l'entreprise.
+>>>>>>> 3eb0d47 (Ajout de l'api rest)
 
 La plateforme comprendra à terme une page d'accueil avec plusieurs propositions ouvertes et la possibilité de voter Pour ou Contre ces propositions. Chaque salarié aura le droit de créer de nouvelles propositions, de les afficher en détail, les modifier et les supprimer (CRUD).
 
@@ -23,7 +27,11 @@ Le travail demandé consiste à concevoir et développer les points d'accès pou
 Les fonctionnalités CRUD des sondages sont accessibles via les points d'accès suivants :
 
 - GET
+<<<<<<< HEAD
 /sondages : permet de récupérer la liste de tous les sondages dont la date de clôture est dans le futur.
+=======
+  /sondages : permet de récupérer la liste de tous les sondages dont la date de clôture est dans le futur.
+>>>>>>> 3eb0d47 (Ajout de l'api rest)
 
 - GET /sondages/{id} : permet de lire le sondage correspondant à l'identifiant {id} et de le retourner au format JSON.
 - POST /sondages : permet de créer un nouveau sondage et renvoie une réponse HTTP 200.
@@ -31,7 +39,11 @@ Les fonctionnalités CRUD des sondages sont accessibles via les points d'accès 
 - DELETE /sondages/{id} : permet de supprimer le sondage correspondant à l'identifiant {id} et renvoie une réponse HTTP 200.
 
 
+<<<<<<< HEAD
   Le livrable doit inclure une méthode de test JUnit pour chaque point d'accès à l'API en utilisant RestTemplate.
+=======
+Le livrable doit inclure une méthode de test JUnit pour chaque point d'accès à l'API en utilisant RestTemplate.
+>>>>>>> 3eb0d47 (Ajout de l'api rest)
 
 En outre, il est également attendu la fourniture d'une page "swagger-ui.html" permettant de lister et tester les points d'accès de l'API. Cette page doit être générée à l'aide de springdoc et swagger.
 
@@ -71,7 +83,11 @@ Les données à enregistrer pour un Sondage :
 
 **1. Créer une base de données MySQL**
 
+<<<<<<< HEAD
 Dans ce projet, la base de données 'sondages' doit être créee avant de lancer l'application. Cependant, la table 'sondage' n'a pas besoin d'être créée préalablement car elle sera générée automatiquement à partir du code. 
+=======
+Dans ce projet, la base de données 'sondages' doit être créee avant de lancer l'application. Cependant, la table 'sondage' n'a pas besoin d'être créée préalablement car elle sera générée automatiquement à partir du code.
+>>>>>>> 3eb0d47 (Ajout de l'api rest)
 
 **2. Cloner le repository**
 
@@ -81,3 +97,8 @@ Elle contient toutes les informations nécessaires pour cloner le dépôt.
 **3. Modification de application.properties**
 
 Pour pouvoir vous connecter à votre base de donnée vous devrez adapter votre configuration dans ce fichier situé dans resources/application.properties
+<<<<<<< HEAD
+=======
+
+    
+>>>>>>> 3eb0d47 (Ajout de l'api rest)
