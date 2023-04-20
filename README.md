@@ -39,7 +39,6 @@ En outre, il est également attendu la fourniture d'une page "swagger-ui.html" p
 
 ----------
 
-
 ## Langages et Framwork utilisés 💬
 
 ![Image](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
@@ -82,7 +81,3 @@ Elle contient toutes les informations nécessaires pour cloner le dépôt.
 **3. Modification de application.properties**
 
 Pour pouvoir vous connecter à votre base de donnée vous devrez adapter votre configuration dans ce fichier situé dans resources/application.properties
-
-
-----------
-    
