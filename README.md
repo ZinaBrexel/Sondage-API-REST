@@ -74,6 +74,8 @@ Dans ce projet, la base de données 'sondages' doit être créee avant de lancer
 
 Dans ce projet, la base de données 'sondages' doit être créee avant de lancer l'application. Cependant, la table 'sondage' n'a pas besoin d'être créée préalablement car elle sera générée automatiquement à partir du code.
 
+Les données de test sont fournies et se trouvent à la racine du projet 'sondage.sql'.
+
 
 **2. Cloner le repository**
 
@@ -110,7 +112,7 @@ Instructions d'utilisation
 
 2. Pour lancer les test unitaires, une fois le serveur lancé, exécuter le fichier 'SondageControllerTest' se situant dans 'test/java/fr.simplon.sondage.SondageControllerTest'.
 
-**N'oubliez pas d'adapter les test à votre base de données!**
+**N'oubliez pas d'importer le fichier 'sondage.sql' dans votre base de données MySQL**
 
 3. La documentation SpringDoc est dispo à cette adresse : (pensez à adapter le port si vous l'avez précédement modifié!)
 
