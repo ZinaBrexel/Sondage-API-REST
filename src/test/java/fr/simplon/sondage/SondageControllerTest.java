@@ -51,8 +51,9 @@ public class SondageControllerTest {
      */
     @Test
     public void testAddSondage() {
-        Sondage sondage = new Sondage("Vacances", "Avez vous pensez à poser vos prochains vacances ? ", LocalDate.now(), LocalDate.now().plusDays(7), "Julia");
-        ResponseEntity<Sondage> response = restTemplate.postForEntity("/sondages/formulaire", sondage, Sondage.class);
+        String url = "http://localhost:"+ port +"/sondages/formulaire";
+        Sondage sondage = new Sondage("Vacances", "Avez-vous pensé à poser vos prochaines vacances ?", LocalDate.now(), LocalDate.now().plusDays(7), "Julia");
+        ResponseEntity<Sondage> response = restTemplate.postForEntity(url, sondage, Sondage.class);
         assertEquals(HttpStatus.OK, response.getStatusCode());
         Sondage result = response.getBody();
         assertNotNull(result.getId());
