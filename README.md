@@ -70,7 +70,7 @@ Les données à enregistrer pour un Sondage :
 **1. Créer une base de données MySQL**
 
 
-Dans ce projet, la base de données 'sondages' doit être créee avant de lancer l'application. Cependant, la table 'sondage' n'a pas besoin d'être créée préalablement car elle sera générée automatiquement à partir du code.
+Dans ce projet, la base de données 'sondages' doit être créee avant de lancer l'application. Cependant, la table 'sondage' n'a pas besoin d'être créée préalablement car elle sera générée automatiquement à partir du code. 
 
 Dans ce projet, la base de données 'sondages' doit être créee avant de lancer l'application. Cependant, la table 'sondage' n'a pas besoin d'être créée préalablement car elle sera générée automatiquement à partir du code.
 
@@ -83,3 +83,35 @@ Elle contient toutes les informations nécessaires pour cloner le dépôt.
 **3. Modification de application.properties**
 
 Pour pouvoir vous connecter à votre base de donnée vous devrez adapter votre configuration dans ce fichier situé dans resources/application.properties
+
+Le port utilisé par l'API est le port 8080 par défaut , pour utiliser un autre port veuillez ajouter 
+
+```
+server.port=
+```
+Suivi du numéro de port que vous souhaitez utiliser. 
+
+En ce qui concerne les test, des ports aléatoires sont défini via le code .
+
+```
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+
+@LocalServerPort
+    private int port;
+
+Sondage updatedSondage = restTemplate.getForObject("http://localhost:" + port + "/sondages/{id}", Sondage.class, sondage.getId());
+```
+
+## Utilisation 💻
+
+Instructions d'utilisation
+
+1. Pour lancer l'application , exécuter le fichier 'SondageApplication' se situant dans 'main/java/fr.simplon.sondage.SondageApplication'.
+
+2. Pour lancer les test unitaires, une fois le serveur lancé, exécuter le fichier 'SondageControllerTest' se situant dans 'test/java/fr.simplon.sondage.SondageControllerTest'.
+
+
+3. Enjoy ! ✨
+
+
+
