@@ -69,7 +69,7 @@ public class SondageControllerTest {
     @Test
     void testGetSondage() {
         RestTemplate restTemplate = new RestTemplate();
-        ResponseEntity<Sondage> response = restTemplate.getForEntity("http://localhost:8080/sondages/1", Sondage.class);
+        ResponseEntity<Sondage> response = restTemplate.getForEntity("http://localhost:" + port + "/sondages/1", Sondage.class);
         assertEquals(HttpStatus.OK, response.getStatusCode());
         Sondage result = response.getBody();
         assertEquals("Nouvelle couverture santé", result.getDescription());
@@ -85,8 +85,9 @@ public class SondageControllerTest {
      */
     @Test
     public void testGetAllSondages() {
+        String url = "http://localhost:" + port + "/sondages";
         ResponseEntity<Collection<Sondage>> response = restTemplate.exchange(
-                "/sondages",
+                url,
                 HttpMethod.GET,
                 null,
                 new ParameterizedTypeReference<Collection<Sondage>>() {});
@@ -95,6 +96,7 @@ public class SondageControllerTest {
         assertNotNull(sondages);
         assertFalse(sondages.isEmpty());
     }
+
 
     /**
      Test de la méthode updateSondage() qui met à jour un sondage en envoyant une requête PUT à l'API REST.
