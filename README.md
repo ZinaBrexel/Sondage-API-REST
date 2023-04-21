@@ -110,6 +110,14 @@ Instructions d'utilisation
 
 2. Pour lancer les test unitaires, une fois le serveur lancé, exécuter le fichier 'SondageControllerTest' se situant dans 'test/java/fr.simplon.sondage.SondageControllerTest'.
 
+3. La documentation SpringDoc est dispo à cette adresse : (pensez à adapter le port si vous l'avez précédement modifié!)
+
+[http://localhost:8080/api-docs](url)
+
+
+4. La documentation Swagger est disponible à cette adresse: (comme précédement n'oubliez pas de changer votre port si besoin)
+
+[http://localhost:8080/swagger-ui/index.html](url)
 
 3. Enjoy ! ✨
 
